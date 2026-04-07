@@ -40,7 +40,7 @@ Developers can reliably run a powerful on-machine AI agent that automates real e
 
 This is a mature brownfield monorepo centered on `crates/goose/`, with CLI (`crates/goose-cli`), local server (`crates/goose-server`), and Electron desktop UI (`ui/desktop`) layered around a common Rust runtime. The repository also contains documentation, recipes, workflow infrastructure, and GSD planning/import artifacts that already succeeded and should be maintained rather than replaced.
 
-Planning should therefore assume brownfield evolution around concrete product capabilities. The roadmap should start from the already-imported GSD workflow baseline, then prioritize enabling slash commands to use skills, supporting multiple remote/external machine targets, and improving the UI. Additional phases should remain easy to add as new user-facing priorities emerge.
+Planning should therefore assume brownfield evolution around concrete product capabilities. The canonical baseline for downstream planning includes `.planning/PROJECT.md`, `.planning/REQUIREMENTS.md`, `.planning/ROADMAP.md`, `.planning/STATE.md`, `.planning/codebase/`, and `.planning/research/`. Phase 1 operationalizes that baseline for later phases by preserving the imported inputs, clarifying how they should be maintained, and requiring explicit documentation when later phases intentionally diverge from that foundation. The roadmap should start from the already-imported GSD workflow baseline, then prioritize enabling slash commands to use skills, supporting multiple remote/external machine targets, and improving the UI. Additional phases should remain easy to add as new user-facing priorities emerge.
 
 ## Constraints
 

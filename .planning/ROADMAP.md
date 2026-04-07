@@ -2,7 +2,7 @@
 
 ## Overview
 
-This roadmap keeps the successful GSD brownfield import intact but shifts execution priorities toward concrete product capabilities. The sequence now starts by preserving and operationalizing the imported workflow baseline, then enables slash commands to use skills, adds support for multiple remote or external machine targets, and follows with UI improvements. Future feature phases can be added dynamically as new priorities are validated.
+This roadmap keeps the successful GSD brownfield import intact but shifts execution priorities toward concrete product capabilities. The sequence now starts by preserving and operationalizing the imported workflow baseline, then enables slash commands to use skills, adds support for multiple remote or external machine targets, and follows with UI improvements. The canonical baseline inherited by later phases includes `.planning/PROJECT.md`, `.planning/REQUIREMENTS.md`, `.planning/ROADMAP.md`, `.planning/STATE.md`, `.planning/codebase/`, and `.planning/research/`. Future feature phases can be added dynamically as new priorities are validated.
 
 ## Phases
 
@@ -22,6 +22,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 ### Phase 1: Imported Workflow Baseline
 **Goal**: Preserve the successful import artifacts and make them the maintained planning baseline for subsequent feature execution.
+**Baseline inheritance**: Later phases inherit the canonical baseline from Phase 1 and should document any intentional divergence instead of silently redefining the preserved inputs.
 **Depends on**: Nothing (first phase)
 **Requirements**: [BASE-01, BASE-02, BASE-03]
 **Success Criteria** (what must be TRUE):
