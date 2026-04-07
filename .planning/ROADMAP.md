@@ -2,7 +2,7 @@
 
 ## Overview
 
-This roadmap initializes goose as a managed brownfield project for GSD execution. It starts by locking in architectural guardrails for contributors, then focuses on runtime reliability, server/desktop contract integrity, desktop safety and UX consistency, and finally contributor workflow clarity so future execution can proceed phase-by-phase with low ambiguity.
+This roadmap keeps the successful GSD brownfield import intact but shifts execution priorities toward concrete product capabilities. The sequence now starts by preserving and operationalizing the imported workflow baseline, then enables slash commands to use skills, adds support for multiple remote or external machine targets, and follows with UI improvements. Future feature phases can be added dynamically as new priorities are validated.
 
 ## Phases
 
@@ -12,89 +12,90 @@ This roadmap initializes goose as a managed brownfield project for GSD execution
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Architectural Guardrails** - Align contributors around implementation boundaries and preserved core patterns
-- [ ] **Phase 2: Runtime Reliability** - Protect core execution, persistence, provider, and security-sensitive behavior
-- [ ] **Phase 3: Contract Integrity** - Keep server routes, generated OpenAPI, and desktop API usage in sync
-- [ ] **Phase 4: Desktop Safety and UX Consistency** - Improve desktop-facing behavior within established Electron/React safety patterns
-- [ ] **Phase 5: Contributor Workflow Confidence** - Strengthen docs, traceability, and OSS execution ergonomics
+- [ ] **Phase 1: Imported Workflow Baseline** - Preserve and maintain the successful GSD workflow import as the foundation for feature work
+- [ ] **Phase 2: Slash Commands Use Skills** - Enable slash commands to discover and invoke skills in a reliable, contributor-friendly way
+- [ ] **Phase 3: Multi-Target Remote Execution** - Support multiple remote or external machine targets without regressing local workflows
+- [ ] **Phase 4: UI Improvements** - Improve the highest-value user-facing workflows around commands, skills, and targets
+- [ ] **Phase 5: Dynamic Feature Expansion** - Keep roadmap growth structured so future feature phases can be added cleanly
 
 ## Phase Details
 
-### Phase 1: Architectural Guardrails
-**Goal**: Make the repository's intended implementation boundaries explicit so contributors extend goose through the shared core and established surface adapters.
+### Phase 1: Imported Workflow Baseline
+**Goal**: Preserve the successful import artifacts and make them the maintained planning baseline for subsequent feature execution.
 **Depends on**: Nothing (first phase)
-**Requirements**: [ARCH-01, ARCH-02, ARCH-03]
+**Requirements**: [BASE-01, BASE-02, BASE-03]
 **Success Criteria** (what must be TRUE):
-  1. Contributors can identify where core logic, CLI logic, server routes, and desktop UI changes belong.
-  2. Planned feature work routes non-trivial behavior into `crates/goose/` rather than duplicating it in surfaces.
-  3. Architectural expectations are reflected in planning artifacts and ready for phase execution.
+  1. Existing `.planning/codebase/` and `.planning/research/` artifacts remain intact and are treated as canonical brownfield inputs.
+  2. Core planning docs reflect the feature roadmap without losing already-imported context.
+  3. Contributors can tell how the imported workflow baseline connects to upcoming feature phases.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Audit and codify implementation boundaries across core, CLI, server, and desktop
-- [ ] 01-02: Capture architectural guardrails in planning and instruction artifacts
-- [ ] 01-03: Validate that future brownfield work can be routed through the shared-core model
+- [ ] 01-01: Audit imported planning artifacts and document which ones must be preserved
+- [ ] 01-02: Align project, requirements, roadmap, and state docs to the feature-centric sequence
+- [ ] 01-03: Verify the preserved import baseline is ready to support downstream phase planning
 
-### Phase 2: Runtime Reliability
-**Goal**: Preserve reliable core behavior across agent execution, persistence, provider compatibility, and security/permission-sensitive paths.
+### Phase 2: Slash Commands Use Skills
+**Goal**: Make slash commands able to discover, use, and explain skills as a first-class product capability.
 **Depends on**: Phase 1
-**Requirements**: [RELY-01, RELY-02, RELY-03, RELY-04]
+**Requirements**: [SKILL-01, SKILL-02, SKILL-03, SKILL-04]
 **Success Criteria** (what must be TRUE):
-  1. Core workflows remain coherent across CLI and desktop entry points.
-  2. Session and local persistence flows remain dependable for ongoing work.
-  3. Security and permission checks remain active for modified execution paths.
-  4. Provider-facing changes preserve intended compatibility expectations.
+  1. Relevant slash commands can discover available skills for the current context.
+  2. Commands can incorporate skills during execution through supported repository patterns.
+  3. Skill usage is understandable to contributors and does not bypass existing safety or local-first guarantees.
+  4. The implementation path spans CLI/server/UI boundaries only where necessary and remains traceable.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: Identify and prioritize core reliability hotspots in agent, session, and provider layers
-- [ ] 02-02: Plan safety-preserving changes for permission and security-sensitive execution paths
-- [ ] 02-03: Define verification coverage for runtime and provider behavior
+- [ ] 02-01: Map the current slash-command and skill integration points across the codebase
+- [ ] 02-02: Plan the command-to-skill invocation flow, guardrails, and contributor-facing behavior
+- [ ] 02-03: Define verification coverage for skill-enabled slash command workflows
 
-### Phase 3: Contract Integrity
-**Goal**: Keep backend routes, generated contracts, and desktop consumption aligned so cross-surface features remain dependable.
+### Phase 3: Multi-Target Remote Execution
+**Goal**: Support multiple remote or external machine targets while preserving trusted local behavior and operational clarity.
 **Depends on**: Phase 2
-**Requirements**: [API-01, API-02, API-03]
+**Requirements**: [TARGET-01, TARGET-02, TARGET-03, TARGET-04]
 **Success Criteria** (what must be TRUE):
-  1. Desktop-backed backend capabilities are exposed through feature-scoped server routes.
-  2. Contract changes regenerate OpenAPI artifacts and generated TypeScript client code consistently.
-  3. Contributors have a clear verification path for contract-sensitive changes before merge.
+  1. Users can configure and select among multiple execution targets.
+  2. Local and remote/external execution behavior remains understandable and reliable.
+  3. Connection, routing, and failure states are visible enough for safe operation.
+  4. Security and auth expectations remain explicit and preserved.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: Map the backend-to-desktop contract flow and common drift points
-- [ ] 03-02: Plan contract-safe changes and generation steps for server-backed features
-- [ ] 03-03: Define verification and review checks for generated artifacts and consumers
+- [ ] 03-01: Identify current execution-target assumptions and extension points
+- [ ] 03-02: Plan target configuration, selection, and routing behavior across surfaces
+- [ ] 03-03: Define verification for connection handling, failure modes, and trust boundaries
 
-### Phase 4: Desktop Safety and UX Consistency
-**Goal**: Improve desktop-facing behavior while preserving existing Electron safety controls and established React implementation patterns.
+### Phase 4: UI Improvements
+**Goal**: Improve user-facing workflows for commands, skills, and targets without regressing established desktop/web safety patterns.
 **Depends on**: Phase 3
-**Requirements**: [UX-01, UX-02, UX-03]
+**Requirements**: [UI-01, UI-02, UI-03]
 **Success Criteria** (what must be TRUE):
-  1. Desktop changes use generated APIs and established component/hook patterns.
-  2. Safety controls such as CSP, localhost trust, and URL restrictions remain intact.
-  3. UI-facing work can be tested and reviewed using existing desktop workflows.
+  1. High-value UI flows for command, skill, and target usage are clearer and easier to operate.
+  2. UI changes align with established component, hook, and generated-client patterns where relevant.
+  3. Safety controls such as CSP, localhost trust, and URL restrictions remain intact.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: Identify desktop UX and safety-sensitive implementation seams
-- [ ] 04-02: Plan UI changes that preserve generated-client and main-process guardrails
-- [ ] 04-03: Define desktop-specific verification expectations for future execution
+- [ ] 04-01: Identify the highest-friction UI workflows around commands, skills, and targets
+- [ ] 04-02: Plan UI changes that improve clarity while preserving architecture and safety guardrails
+- [ ] 04-03: Define UI verification expectations for the targeted workflows
 
-### Phase 5: Contributor Workflow Confidence
-**Goal**: Make the brownfield repo easier to navigate and safer to evolve through clearer workflows, traceability, and documentation.
+### Phase 5: Dynamic Feature Expansion
+**Goal**: Keep roadmap evolution feature-centric and flexible so future validated work can be added without destabilizing the plan.
 **Depends on**: Phase 4
-**Requirements**: [FLOW-01, FLOW-02, FLOW-03]
+**Requirements**: [ROAD-01, ROAD-02]
 **Success Criteria** (what must be TRUE):
-  1. Contributors can find the right build, lint, test, and generation steps for their changes.
-  2. Planning artifacts clearly map requirements to execution phases and repository boundaries.
-  3. Generated artifacts, docs, and release-related workflows are understandable enough to support confident OSS contribution.
+  1. The roadmap clearly distinguishes current priorities from future add-on phases.
+  2. Future feature phases can be inserted or appended with low ambiguity.
+  3. Planning artifacts continue to preserve traceability as new priorities emerge.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: Improve contributor-facing navigation across code, docs, and generated artifacts
-- [ ] 05-02: Strengthen planning traceability for brownfield execution work
-- [ ] 05-03: Capture workflow guidance for docs, release, and generated-file maintenance
+- [ ] 05-01: Document how future feature phases should be added and linked to requirements
+- [ ] 05-02: Keep planning traceability coherent as roadmap scope grows
+- [ ] 05-03: Establish a lightweight pattern for dynamic roadmap expansion after phase execution begins
 
 ## Progress
 
@@ -103,8 +104,8 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Architectural Guardrails | 0/3 | Not started | - |
-| 2. Runtime Reliability | 0/3 | Not started | - |
-| 3. Contract Integrity | 0/3 | Not started | - |
-| 4. Desktop Safety and UX Consistency | 0/3 | Not started | - |
-| 5. Contributor Workflow Confidence | 0/3 | Not started | - |
+| 1. Imported Workflow Baseline | 0/3 | Not started | - |
+| 2. Slash Commands Use Skills | 0/3 | Not started | - |
+| 3. Multi-Target Remote Execution | 0/3 | Not started | - |
+| 4. UI Improvements | 0/3 | Not started | - |
+| 5. Dynamic Feature Expansion | 0/3 | Not started | - |

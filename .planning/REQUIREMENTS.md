@@ -5,48 +5,43 @@
 
 ## v1 Requirements
 
-### Architecture
+### Imported Workflow Baseline
 
-- [ ] **ARCH-01**: Contributors can identify the correct implementation boundary for a feature change among core, CLI, server, and desktop surfaces
-- [ ] **ARCH-02**: Non-trivial product behavior is implemented in `crates/goose/` and reused by surface layers rather than duplicated
-- [ ] **ARCH-03**: Cross-surface changes document and preserve the shared-core / thin-interface architecture
+- [ ] **BASE-01**: Existing GSD import artifacts remain present, understandable, and usable as the planning baseline
+- [ ] **BASE-02**: Planning updates preserve successful brownfield import context instead of replacing it with disconnected meta documentation
+- [ ] **BASE-03**: Contributors can identify which imported workflow artifacts are canonical inputs for future planning and execution
 
-### Reliability
+### Slash Commands + Skills
 
-- [ ] **RELY-01**: Core agent workflows behave consistently across CLI and desktop entry points for the same capability
-- [ ] **RELY-02**: Session, persistence, and local execution paths remain reliable as features evolve
-- [ ] **RELY-03**: Security- and permission-sensitive execution paths remain active for new or modified capabilities
-- [ ] **RELY-04**: Provider and auth integrations preserve intended behavior across the supported compatibility surface
+- [ ] **SKILL-01**: Slash commands can discover available skills relevant to the invoked command or task
+- [ ] **SKILL-02**: Slash commands can invoke or incorporate skills during execution using project-supported patterns
+- [ ] **SKILL-03**: Skill usage through slash commands is understandable to contributors and traceable in planning and implementation artifacts
+- [ ] **SKILL-04**: Skill-enabled command flows preserve existing safety, permissions, and local-first execution guarantees
 
-### API Contract
+### Multi-Target / Remote Execution
 
-- [ ] **API-01**: Desktop-facing backend changes are exposed through `crates/goose-server/src/routes/` rather than ad hoc side channels
-- [ ] **API-02**: OpenAPI artifacts and generated TypeScript clients stay synchronized with backend contract changes
-- [ ] **API-03**: Contract-sensitive changes are verifiable by contributors before merge
+- [ ] **TARGET-01**: Users can configure and select from multiple remote or external machine targets
+- [ ] **TARGET-02**: Execution workflows can route work to the intended target without breaking existing local behavior
+- [ ] **TARGET-03**: Target selection, connection state, and failure modes are visible enough for reliable operation
+- [ ] **TARGET-04**: Multi-target support preserves security boundaries, auth expectations, and operator trust
 
-### Desktop Experience
+### UI Improvements
 
-- [ ] **UX-01**: Desktop features that rely on backend capabilities use the generated API client and existing React/Electron patterns
-- [ ] **UX-02**: Desktop behavior preserves existing safety controls such as localhost trust, CSP, and URL/protocol restrictions
-- [ ] **UX-03**: UI-facing changes remain consistent with established component, hook, and testing patterns in `ui/desktop`
+- [ ] **UI-01**: UI changes improve clarity of the most important command, skill, and target workflows
+- [ ] **UI-02**: UI improvements align with established React/Electron patterns and existing generated-client or backend boundaries where relevant
+- [ ] **UI-03**: UI changes preserve existing safety controls such as CSP, localhost trust, and URL/protocol restrictions
 
-### Contributor Workflow
+### Roadmap Extensibility
 
-- [ ] **FLOW-01**: Contributors can discover the correct build, test, lint, and generation commands for the areas they change
-- [ ] **FLOW-02**: Planning and execution traceability clearly connect requirements, phases, and repository boundaries
-- [ ] **FLOW-03**: Generated artifacts, docs, and release-related workflows remain understandable and maintainable for OSS contributors
+- [ ] **ROAD-01**: The roadmap can accept additional future feature phases without disrupting completed or planned work
+- [ ] **ROAD-02**: Planning artifacts clearly distinguish current prioritized phases from future dynamic additions
 
 ## v2 Requirements
 
-### Platform Expansion
+### Future Expansion
 
-- **PLAT-01**: Users can access goose through additional native mobile clients
-- **PLAT-02**: Users can rely on a hosted cloud-first execution model as the primary product surface
-
-### Broader Refactors
-
-- **REF-01**: The core crate is split into smaller independently evolvable domain crates
-- **REF-02**: Provider support is reorganized into separately versioned plugin packages
+- **FUTURE-01**: Additional feature phases can be appended for newly validated product priorities
+- **FUTURE-02**: Broader architectural cleanup can be planned after the feature roadmap produces implementation feedback
 
 ## Out of Scope
 
@@ -55,28 +50,28 @@
 | Native iOS/Android apps | Not aligned with current brownfield repo focus or validated product surface |
 | Replacing Rust core with separate per-surface logic | Conflicts with established architecture and would increase duplication risk |
 | Cloud-first product repositioning | Current repository and product positioning are explicitly local/on-machine first |
-| Large-scale provider/plugin replatforming in initial roadmap | Too broad for initialization roadmap; better handled after focused brownfield execution learns more |
+| Large meta-roadmap/infrastructure-first reshaping before feature delivery | Conflicts with the requested feature-centric execution order |
 
 ## Traceability
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ARCH-01 | Phase 1 | Pending |
-| ARCH-02 | Phase 1 | Pending |
-| ARCH-03 | Phase 1 | Pending |
-| RELY-01 | Phase 2 | Pending |
-| RELY-02 | Phase 2 | Pending |
-| RELY-03 | Phase 2 | Pending |
-| RELY-04 | Phase 2 | Pending |
-| API-01 | Phase 3 | Pending |
-| API-02 | Phase 3 | Pending |
-| API-03 | Phase 3 | Pending |
-| UX-01 | Phase 4 | Pending |
-| UX-02 | Phase 4 | Pending |
-| UX-03 | Phase 4 | Pending |
-| FLOW-01 | Phase 5 | Pending |
-| FLOW-02 | Phase 5 | Pending |
-| FLOW-03 | Phase 5 | Pending |
+| BASE-01 | Phase 1 | Pending |
+| BASE-02 | Phase 1 | Pending |
+| BASE-03 | Phase 1 | Pending |
+| SKILL-01 | Phase 2 | Pending |
+| SKILL-02 | Phase 2 | Pending |
+| SKILL-03 | Phase 2 | Pending |
+| SKILL-04 | Phase 2 | Pending |
+| TARGET-01 | Phase 3 | Pending |
+| TARGET-02 | Phase 3 | Pending |
+| TARGET-03 | Phase 3 | Pending |
+| TARGET-04 | Phase 3 | Pending |
+| UI-01 | Phase 4 | Pending |
+| UI-02 | Phase 4 | Pending |
+| UI-03 | Phase 4 | Pending |
+| ROAD-01 | Phase 5 | Pending |
+| ROAD-02 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 16 total
@@ -85,4 +80,4 @@
 
 ---
 *Requirements defined: 2026-04-07*
-*Last updated: 2026-04-07 after initial definition*
+*Last updated: 2026-04-07 after roadmap refocus*
