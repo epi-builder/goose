@@ -7,8 +7,8 @@
 
 ### Imported Workflow Baseline
 
-- [ ] **BASE-01**: Existing GSD import artifacts remain present, understandable, and usable as the planning baseline
-- [ ] **BASE-02**: Planning updates preserve successful brownfield import context instead of replacing it with disconnected meta documentation
+- [ ] **BASE-01**: Existing GSD import artifacts remain present, understandable, and usable as the planning baseline for downstream planning
+- [ ] **BASE-02**: Planning updates preserve successful brownfield import context instead of replacing it with disconnected meta documentation, so canonical inputs stay usable
 - [ ] **BASE-03**: Contributors can identify which imported workflow artifacts are canonical inputs for future planning and execution
 
 ### Slash Commands + Skills
