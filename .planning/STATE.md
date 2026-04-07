@@ -21,7 +21,7 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-07)
 
 **Core value:** Developers can reliably run a powerful on-machine AI agent that automates real engineering work while remaining extensible, local-first, and open.
-**Current focus:** Phase 01 — imported-workflow-baseline; imported artifacts remain canonical inputs, planning readiness depends on explicit baseline documentation rather than replacement documentation, and readiness will be confirmed in `01-VERIFICATION.md`.
+**Current focus:** Phase 01 — imported-workflow-baseline; imported artifacts remain canonical inputs, planning readiness depends on explicit baseline documentation rather than replacement documentation, and readiness is backed by `01-VERIFICATION.md`.
 
 ## Current Position
 
