@@ -58,7 +58,7 @@ None yet.
 
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
-| 260407-wa5 | Refocus planning artifacts onto a feature-centric roadmap preserving import artifacts | 2026-04-07 | PENDING | [260407-wa5-refocus-planning-artifacts-onto-a-featur](./quick/260407-wa5-refocus-planning-artifacts-onto-a-featur/) |
+| 260407-wa5 | Refocus planning artifacts onto a feature-centric roadmap preserving import artifacts | 2026-04-07 | b77f8fb1 | [260407-wa5-refocus-planning-artifacts-onto-a-featur](./quick/260407-wa5-refocus-planning-artifacts-onto-a-featur/) |
 
 ## Session Continuity
 
