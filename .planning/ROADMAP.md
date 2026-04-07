@@ -32,9 +32,9 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Audit imported planning artifacts and document which ones must be preserved
-- [ ] 01-02: Align project, requirements, roadmap, and state docs to the feature-centric sequence
-- [ ] 01-03: Verify the preserved import baseline is ready to support downstream phase planning
+- [x] 01-01: Audit imported planning artifacts and document which ones must be preserved
+- [x] 01-02: Align project, requirements, roadmap, and state docs to the feature-centric sequence
+- [x] 01-03: Verify the preserved import baseline is ready to support downstream phase planning
 
 ### Phase 2: Slash Commands Use Skills
 **Goal**: Make slash commands able to discover, use, and explain skills as a first-class product capability.
