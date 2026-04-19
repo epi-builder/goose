@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: planning
-stopped_at: Phase 1 baseline is complete; Phase 2 context is ready for planning
-last_updated: "2026-04-08T07:08:00.000Z"
-last_activity: 2026-04-08 -- Phase 2 context captured and health remediation in progress
+status: executing
+stopped_at: Planning artifacts updated; Phase 1 is ready for planning under the new feature-centric roadmap
+last_updated: "2026-04-07T22:27:32.582Z"
+last_activity: 2026-04-07 -- Phase 2 planning complete
 progress:
   total_phases: 5
   completed_phases: 1
-  total_plans: 3
+  total_plans: 6
   completed_plans: 3
-  percent: 100
+  percent: 50
 ---
 
 # Project State
@@ -21,14 +21,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-04-07)
 
 **Core value:** Developers can reliably run a powerful on-machine AI agent that automates real engineering work while remaining extensible, local-first, and open.
-**Current focus:** Phase 02 — slash-commands-use-skills; skill discovery and slash completion should align with agent availability rules, and desktop input should support structured `[name](path)` link rendering for skill references.
+**Current focus:** Phase 02 — slash-commands-use-skills; ready to execute shared `summon`-aligned skill discovery, canonical `[name](path)` slash insertion, generated API synchronization, desktop markdown-link rendering, and safety/local-first verification.
 
 ## Current Position
 
-Phase: 02 (slash-commands-use-skills) — PLANNING
-Plan: 0 of 3
-Status: Ready to plan Phase 02
-Last activity: 2026-04-08 -- Phase 2 context captured
+Phase: 02 (slash-commands-use-skills) — READY TO EXECUTE
+Plan: 3 of 3
+Status: Ready to execute
+Last activity: 2026-04-08 -- Phase 2 planning complete
 
 Progress: [██████████] 100% complete for Phase 01
 
@@ -72,8 +72,9 @@ None yet.
 
 ### Blockers/Concerns
 
-- Brownfield complexity still spans runtime, provider matrix, generated contracts, and Electron/main-process behavior; feature phases should stay tightly scoped.
-- Multi-target execution and skill-aware slash commands may cross CLI, server, and UI boundaries, so future plans should be explicit about seams and verification.
+- Brownfield complexity still spans runtime, provider matrix, generated contracts, and Electron/main-process behavior; Phase 2 execution should stay tightly scoped to slash-command skill discovery, canonical references, and bounded composer rendering.
+- Phase 2 must verify generated OpenAPI/client synchronization and canonical markdown-link round-trip to avoid UI/server drift.
+- See `.planning/phases/02-slash-commands-use-skills/02-VERIFICATION.md` for the execution readiness contract and required evidence.
 
 ### Quick Tasks Completed
 
